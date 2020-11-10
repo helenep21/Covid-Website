@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container h-100">
+    <h1>Profile de : {{user.username}}</h1>
+    </br>
+    <h2>Email : {{user.email}}</h2>
+    <h2>Téléphone : {{user.profile.phone}}</h2>
+    <h2>Adresse : {{user.profile.address}}</h2>
+    <h2>Ville : {{user.profile.city}}</h2>
+    <h2>Pays : {{user.profile.country}}</h2>
+    <h2>Nombre d'Habitants : {{user.profile.nbp}}</h2>
+    <h2>Prénoms Habitants : {{user.profile.prenoms}}</h2>
+    <h2>Noms Habitants : {{user.profile.noms}}</h2>
+</div>
+{%endblock content%}

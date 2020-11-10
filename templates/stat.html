@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Hero Section-->
+    <section style="background: url({% static 'img/corona.jpg' %}); background-size: cover; background-position: center center" class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <h1>Statistiques</h1><a href="#" class="hero-link">Decouvrir</a>
+          </div>
+        </div><a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i>Glisser vers le bas</a>
+      </div>
+    </section>
+    <!-- Intro Section-->
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="h3">Nombre de commandes dans le temps</h2>
+            <section class="stats no-padding">    
+              <div class="row">
+                <div class="mix col-lg-3 col-md-3 col-sm-6">
+                 <div class="item"><a class="image"><img src="{% static 'img/date.png' %}" style="padding:30px; 0px; 0px; 0px;" height="422" width="722"  class="center">
+                   <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a>
+                 </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="h3">Pourcentage de commandes des produits</h2>
+            <section class="stats no-padding">    
+              <div class="row">
+                <div class="mix col-lg-3 col-md-3 col-sm-6">
+                 <div class="item"><a class="image"><img src="{% static 'img/camembert.png' %}" style="padding:30px; 0px; 0px; 0px;" height="500" width="722"  class="center">
+                   <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a>
+                 </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="height:500" class="intro">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2 class="h3">En chiffres</h2>
+            <h4><div  class="center"><br><br>Nombre total de produits commandés : {{chiffre}}<br><br>Nombre total de commande : {{commande}}<br><br>Nombre de commande le plus élevé : {{utilisateur}} avec {{nbre}} commandes</div></h4>
+          </div>       
+        </div>
+      </div>
+    </section>
+    <!--
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="h3">Statistiques</h2>
+            <section class="stats no-padding">    
+              <div class="row">
+                <div class="mix col-lg-3 col-md-3 col-sm-6">
+                 <div class="item">
+                    
+                 </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+  <!--
+ <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="h3">Stats4</h2>
+            <section class="stats no-padding">    
+              <div class="row">
+                <div class="mix col-lg-3 col-md-3 col-sm-6">
+                 <div class="item"><a class="image"><img src="{% static 'img/Stats.png' %}" style="padding:30px; 0px; 0px; 0px;" height="422" width="722"  class="center">
+                   <div class="overlay d-flex align-items-center justify-content-center"><i class="icon-search"></i></div></a>
+                 </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+{% endblock content %}
