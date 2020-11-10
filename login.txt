@@ -1,0 +1,8 @@
+admin : 
+general 123motpasse
+
+users normaux:
+test123 123motpasse
+
+staff: 
+staff1 123motpasse
